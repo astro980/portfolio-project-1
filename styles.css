@@ -8,14 +8,14 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #222;
-  background: #f7f5f0;
+  color: #fff;
+  background: #fff;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: rgb(238, 151, 51);
 }
 a:hover {
   color: #6633ff;
@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(9,9,9,0.5);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -43,7 +43,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: rgba(245, 243, 243, 0.7);
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -52,12 +52,15 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  height: 850px;
+  background: linear-gradient(#4eda6c, transparent 90%),
+              linear-gradient(0deg,#fff, transparent),
+            #ffa949 url('images/regina.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -66,15 +69,15 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  margin-top: 150px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all 1s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
 .tag {
   background-color: #efefef;
@@ -93,13 +96,13 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background: #222;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #4a3986;
 }
 
 ul.skills {
@@ -126,6 +129,10 @@ footer {
   padding: 20px 0 40px 20px;
 }
 
+/*****************************
+********** FOOTER ****
+*****************************/
+
 footer .copyright {
   top: -8px;
   font-size: .75em;
@@ -140,6 +147,10 @@ footer ul {
 footer ul li {
   display: inline-block;
 }
+
+/*****************************
+********** SOCIAL MEDIA LINKS ****
+*****************************/
 
 a.social {
   display: inline-block;
