@@ -21,7 +21,9 @@ a:hover {
   color: #6633ff;
 }
 
-/* Section Styles */
+/*****************************
+********** NAV ****
+*****************************/
 
 .main-nav {
   width: 100%;
@@ -55,6 +57,10 @@ a:hover {
   color: white;
 }
 
+/*****************************
+********** HEADER ****
+*****************************/
+
 header {
   text-align: center;
   height: 850px;
@@ -73,24 +79,33 @@ header .profile-image {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 1px solid rgb(73, 180, 40);
   transition: all 1s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) flip(360deg);
+  transform: scale(0.9) rotate(360deg);
 }
-.tag {
-  background-color: #efefef;
+
+/*****************************
+********** OTHER EDITS ****
+*****************************/
+
+ .prof-container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  margin-top: 20px;
+  border: 2px solid #000;
+  border-radius: 2px;
+}
+.tag,
+.location {
   color: black;
-  padding: 10px;
-  border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
-.location {
-  background-color: #222;
-  color: yellow;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -122,36 +137,89 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: #0399ff;
 }
+/*****************************
+********** FAMILY SECTION ****
+*****************************/
 
-footer {
-  width: 100%;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+.fam-container {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;   
+}
+.my-fam {  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(23, 104, 196, 0.9);
+  background: #222;
+  height: 500px;
+  width: 600px;
+  margin-top: 8em;
+  border-top: 20px solid #0399ff; 
+  transition: all 2s;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.my-fam h3 { 
+  display: block;
+  margin-top: 200px;
+  font-size: 30px;
+}
+.my-fam:hover {
+  height: 500px;
+  background: url(images/myfam.jpg) 
+              no-repeat  center;
+  transform: ease-in;     
+  box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 1);       
+}
+.kiki-sec {
+  display: block;  
+  margin-left: auto;
+  margin-right:  auto;
+  height: 500px;
+  width: 80%;
+  margin-top: 100px;
+  border: 1px solid red;
 }
 
+.kiki { 
+  margin-top: 50px;
+  border: 1px solid red;
+  float: left;
+  height: 400px;
+  width: 400px;
+}
+.about-kiki {
+  float: right;
+  margin-top: 120px;
+  margin-right: 140px;
+  color: #000;
+  width: 40%;  
+  border: 1px solid red;
+  padding: 45px;
+}
 /*****************************
 ********** FOOTER ****
 *****************************/
-
+footer {
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
 footer .copyright {
   top: -8px;
   font-size: .75em;
 }
-
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 footer ul li {
   display: inline-block;
 }
-
 /*****************************
 ********** SOCIAL MEDIA LINKS ****
 *****************************/
-
 a.social {
   display: inline-block;
   text-indent: -9999px;
@@ -174,12 +242,14 @@ a.github {
 a.social:hover {
   opacity: 1;
 }
-.clearfix {
+.clearfix::after {
+  content: " ";
+  display: table;
   clear: both;
 }
 
 /* Styles for larger screens */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1020px) {
   
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -213,6 +283,8 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
+
+  
 
 }
 

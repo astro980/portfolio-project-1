@@ -13,24 +13,28 @@
           <li class="name">Jurimar Langomez</li>
           <li><a href="index.html">Home</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#family">Family</a></li>
+          <li><a href="#experience">Hobbies</a></li>
         </ul>
     </div> <!-- Navigation end -->
 
     <header>
       <img src="images/me.jpg" alt="Drawing of Jurimar Langomez" class="profile-image">
-      <h1 class="tag name">Hello, I’m Jurimar.</h1>
-      <p class="tag location">My home is Regina, Saskatchewan.</p>
+      <div class="prof-container">
+        <h1 class="tag name">Hello, I’m Jurimar.</h1>
+        <p class="tag location">My home is Regina, Saskatchewan.</p>
+      </div>
     </header>
 
-    <div id="experience">
+    <div id="experience clearfix">
       <main class="flex">
-        <div class="card">
+        <article class="card">
           <h2>Background</h2>
           <p>I’m an aspiring web designer who loves everything about the web. I've currently living in Canada and works on different variety of jobs. I’m excited to bring my life experience to the process of building fantastic looking websites.</p>
           <p>I'm currently working as a Farm Equipment Assembly. The environment is good, nice people and lots of work to do that always makes me busy to finish up the day.</p>
-        </div> 
+        </article> 
 
-        <div class="card">
+        <article class="card">
           <h2>Goals</h2>
           <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
           <ul class="skills">
@@ -42,11 +46,30 @@
             <li>C#</li>
           </ul>
           <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
-        </div> 
-
-      </main>
+        </article>
+      </main>      
     </div>
-    <footer>
+
+    <section>
+      <div id="family" class="clearfix">
+        <article class="my-fam container">
+        <h2>Meet My Awesome Family</h2>
+          <p>Of course, me</p>
+          <p>My beautiful wife, Mary Joy</p>
+          <p>,And that cute little kid, Amaziah.</p>
+          <h3 class="pos-bot">Hover the box! to see my family.</h3>        
+        </article>      
+        <div class="kiki-sec">
+          <img src="images/kiki.png" class="kiki" alt="My cure little furball kiki">
+          <article class="about-kiki">
+          <h2>"Kiki" the gingercat</h2>
+          <p>Meet my nice little cat, <strong>Kiki</strong>. We found Kiki when we park outside the Walmart, after we went off the car. My son heard meowing, Amaziah look at to me and said. <strong>"Daddy there's a cat, meow meow meow"</strong>. We search for that sound and found him underneath of the car. </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="container clearfix">
       <ul>
         <li><a href="https://twitter.com/LangomezJurimar" class="social twitter">Twitter</a></li>
         <li><a href="#" class="social linkedin">LinkedIn</a></li>
