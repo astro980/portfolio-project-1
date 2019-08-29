@@ -30,7 +30,6 @@ a:hover {
   background: rgba(9,9,9,0.5);
   min-height: 30px;
   padding: 10px;
-  position: fixed;
   text-align: center;
 }
 .nav {
@@ -194,6 +193,37 @@ ul.skills {
   color: #000;
   width: 40%;
   padding: 45px;
+}
+
+/*****************************
+********** Experience HTML ****
+*****************************/
+
+/* Experience Layout */
+.exp-container {  
+  height: 100%;
+  max-width: 70%;
+  margin: auto;
+}
+/* Experience Edits */
+.exp-title {
+  margin: 40px 100px;  
+  padding: 30px;
+  color: #000;
+  
+}
+.exp-story {
+  font-size: 1.4em;
+  line-height: 1.2;
+  word-break: break-word;
+  padding: 30px 20px 15px;
+  margin: auto;
+  color: #000;
+  width: 80%;
+}
+.img-experience {  
+  height: 60%;
+  width: 70%;
 }
 /*****************************
 ********** FOOTER ****
