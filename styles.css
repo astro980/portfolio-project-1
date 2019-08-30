@@ -8,7 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  color: #000;
   background: #fff;
 }
 /* Link Styles */
@@ -110,6 +110,7 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
+  color: #fff;
   background: #222;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
@@ -167,8 +168,7 @@ ul.skills {
 .my-fam:hover {
   height: 500px;
   background: url(images/myfam.jpg) 
-              no-repeat  center;
-  transform: ease-in;     
+              no-repeat  center;     
   box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 1);       
 }
 .kiki-sec {
@@ -215,7 +215,6 @@ ul.skills {
 .exp-story {
   font-size: 1.4em;
   line-height: 1.2;
-  word-break: break-word;
   padding: 30px 20px 15px;
   margin: auto;
   color: #000;
