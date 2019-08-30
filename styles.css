@@ -229,6 +229,7 @@ ul.skills {
 ********** FOOTER ****
 *****************************/
 footer {
+  color: #000;
   min-height: 30px;
   padding: 20px 0 40px 20px;
 }
